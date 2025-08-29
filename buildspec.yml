@@ -10,5 +10,5 @@ phases:
       - cp -r web appspec.yml scripts artifact/
 artifacts:
   files:
-    - '/*'
+    - '**/*.jar'
   base-directory: artifact
