@@ -1,14 +1,11 @@
 version: 0.2
 phases:
-  install:
-    commands:
-      - echo "Install phase"
   build:
     commands:
-      - echo "Zipping artifacts"
+      - echo "Packaging artifacts"
       - mkdir -p artifact
       - cp -r web appspec.yml scripts artifact/
 artifacts:
   files:
-    - '**/*.jar'
+    - '/*'
   base-directory: artifact
